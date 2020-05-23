@@ -1,0 +1,9 @@
+/sys/class/leds/lcd-backlight(/.*)? 	   u:object_r:sysfs_leds:s0
+
+# Shell files
+/system/vendor/bin/init\.qcom\.mem\.sh               u:object_r:qti_init_shell_exec:s0
+
+#Light
+/system/vendor/bin/hw/android\.hardware\.light@2\.0-service.g151 			    u:object_r:hal_light_default_exec:s0
+#Power
+/system/vendor/bin/hw/android\.hardware\.power@1\.0-service\.g151             u:object_r:hal_power_default_exec:s0
