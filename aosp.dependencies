@@ -7,7 +7,7 @@
   },
   {
     "remote":  "github",
-    "repository":  "rizkiiyok/propreitary_vendor_haier_msm8909",
+    "repository":  "rizkiiyok/propreitary_vendor_haier_g151",
     "target_path":  "vendor/haier/g151",
     "branch":  "oreo-mr1"
   }
