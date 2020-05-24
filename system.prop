@@ -1,6 +1,3 @@
-# Media
-media.aac_51_output_enabled=true
-
 # Audio
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
@@ -16,8 +13,12 @@ persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.fluence.speaker=false
 
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+
 # Bluetooth
-vendor.qcom.bluetooth.soc=smd
+vendor.bluetooth.soc=pronto
+vendor.qcom.bluetooth.soc=pronto
 ro.bluetooth.dun=true
 ro.bluetooth.hfp.ver=1.7
 ro.bluetooth.sap=true
@@ -44,9 +45,29 @@ ro.frp.pst=/dev/block/platform/soc.0/7824900.sdhci/by-name/config
 #HWUI properties
 ro.hwui.text_large_cache_height=2048
 
+# IMS
+net.lte.volte_call_capable=true
+persist.ims.enableADBLogs=1
+persist.ims.enableDebugLogs=1
+persist.radio.calls.on.ims=true
+persist.radio.csvt.enabled=false
+persist.radio.jbims=1
+persist.radio.ROTATION_ENABLE=1
+persist.radio.VT_ENABLE=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.VT_USE_MDM_TIME=0
+persist.dbg.volte_avail_ovr=1
+persist.volte_enalbed_by_hw=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
 # Media
 drm.service.enabled=1
 vidc.enc.narrow.searchrange=1
+
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Perf
 ro.config.max_starting_bg=8

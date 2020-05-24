@@ -15,18 +15,18 @@
 
 $(call inherit-product, device/haier/g151/full_g151.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common AOSP stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8909
 
-TARGET_MINIMAL_APPS := true
-
-PRODUCT_NAME := aosp_g151
+PRODUCT_NAME := lineage_g151
 BOARD_VENDOR := haier
 PRODUCT_DEVICE := g151
 
 PRODUCT_GMS_CLIENTID_BASE := android-haier
 
-BUILD_FINGERPRINT := Smartfren/a16c3h/a16c3h:5.1.1/release-keys
+TARGET_VENDOR_PRODUCT_NAME := A16C3H
+TARGET_VENDOR_DEVICE_NAME := A16C3H
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=A16C3H PRODUCT_NAME=A16C3H
