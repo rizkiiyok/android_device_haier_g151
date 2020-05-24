@@ -151,12 +151,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
 
-# SELinux
-#include device/qcom/sepolicy/sepolicy.mk
+# Sepolicy
 include device/qcom/sepolicy-legacy/sepolicy.mk
-
-#BOARD_SEPOLICY_DIRS += \
-    #$(DEVICE_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
