@@ -103,8 +103,8 @@ LOCAL_SHARED_LIBRARIES:= \
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE:= mm-qcamera-app
-LOCAL_32_BIT_ONLY := true
 LOCAL_VENDOR_MODULE := true
+LOCAL_32_BIT_ONLY := true
 include $(BUILD_EXECUTABLE)
 endif
 

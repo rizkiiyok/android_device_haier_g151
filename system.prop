@@ -1,49 +1,94 @@
+# Media
+media.aac_51_output_enabled=true
+
 # Audio
+af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+vendor.audio.av.streaming.offload.enable=true
+vendor.audio.offload.buffer.size.kb=64
+vendor.audio.offload.gapless.enabled=true
+vendor.audio_hal.period_size=192
+vendor.voice.path.for.pcm.voip=true
 ro.vendor.audio.sdk.fluencetype=fluence
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.fluence.speaker=false
 
+# Bluetooth
+vendor.qcom.bluetooth.soc=smd
+ro.bluetooth.dun=true
+ro.bluetooth.hfp.ver=1.7
+ro.bluetooth.sap=true
+ro.qualcomm.bt.hci_transport=smd
+
 # Camera
 persist.camera.cpp.duplication=false
 persist.camera.hal.debug.mask=0
+persist.camera.longshot.stages=1
 
 # Display
+debug.hwui.use_buffer_age=false
+debug.composition.type=dyn
+debug.mdpcomp.idletime=600
+persist.hwc.mdpcomp.enable=true
+persist.hwc.ptor.enable=true
+debug.enable.sglscale=1
+ro.opengles.version=196608
 ro.sf.lcd_density=240
 
-# Factory Reset Protection
+# FRP
 ro.frp.pst=/dev/block/platform/soc.0/7824900.sdhci/by-name/config
 
-# Perf
-ro.sys.fw.dex2oat_thread_count=3
+#HWUI properties
+ro.hwui.text_large_cache_height=2048
 
-# VOLTE
-net.lte.volte_call_capable=true
-persist.ims.enableADBLogs=1
-persist.ims.enableDebugLogs=1
-persist.radio.calls.on.ims=true
-persist.radio.csvt.enabled=false
-persist.radio.jbims=1
-persist.radio.ROTATION_ENABLE=1
-persist.radio.VT_ENABLE=1
-persist.radio.VT_HYBRID_ENABLE=1
-persist.radio.VT_USE_MDM_TIME=0
-persist.dbg.volte_avail_ovr=1
-persist.volte_enalbed_by_hw=1
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
+# Media
+drm.service.enabled=1
+vidc.enc.narrow.searchrange=1
+
+# Perf
+ro.config.max_starting_bg=8
+ro.vendor.extension_library=libqti-perfd-client.so
+ro.core_ctl_min_cpu=0
+ro.core_ctl_max_cpu=4
+ro.min_freq_0=800000
 
 # Radio
+persist.data.qmi.adb_logmask=0
+persist.radio.add_power_save=1
+persist.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.apm_sim_not_pwdn=1
+ro.telephony.call_ring.multiple=false
 persist.radio.multisim.config=dsds
 persist.radio.custom_ecc=1
 persist.radio.ecc_hard_1=112,911,110,122,119,120,000,118
 persist.radio.ecc_hard_count=1
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 ril.subscription.types=RUIM
-ro.telephony.default_network=9,1
 
-# Hack HAL1 Legacy
-media.stagefright.legacyencoder=true
-media.stagefright.less-secure=true
-camera2.portability.force_api=1
+# Storage
+ro.sys.sdcardfs=true
+
+# SYS
+ro.sys.fw.use_trim_settings=true
+ro.sys.fw.empty_app_percent=50
+ro.sys.fw.trim_empty_percent=100
+ro.sys.fw.trim_cache_percent=100
+ro.sys.fw.trim_enable_memory=1073741824
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapminfree=6m
+dalvik.vm.heapstartsize=14m
+dalvik.vm.heapsize=256m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.dex2oat-flags=--no-watch-dog
+dalvik.vm.dex2oat-swap=false
+sys.use_fifo_ui=1
+
+# Vendor security patch level
+ro.lineage.build.vendor_security_patch=2017-01-01
+
+# Wi-Fi
+wifi.interface=wlan0

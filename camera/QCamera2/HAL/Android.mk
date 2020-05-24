@@ -28,6 +28,11 @@ LOCAL_SRC_FILES := \
 LOCAL_CFLAGS = -Wall -Wextra -Werror
 LOCAL_CFLAGS += -DDEFAULT_ZSL_MODE_ON
 
+#use media extension
+#ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)
+LOCAL_CFLAGS += -DUSE_MEDIA_EXTENSIONS
+#endif
+
 #Debug logs are enabled
 #LOCAL_CFLAGS += -DDISABLE_DEBUG_LOG
 
@@ -47,7 +52,7 @@ LOCAL_CFLAGS += -DDEFAULT_DENOISE_MODE_ON
 
 LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../stack/common \
-	frameworks/native/include \
+        frameworks/native/include \
         frameworks/native/include/media/openmax \
         frameworks/native/libs/nativebase/include \
         frameworks/native/libs/nativewindow/include \
@@ -89,8 +94,8 @@ endif
 LOCAL_MODULE_RELATIVE_PATH    := hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_32_BIT_ONLY := true
-LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
 
