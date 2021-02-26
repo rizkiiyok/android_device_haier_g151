@@ -1,2 +1,1 @@
-add_lunch_combo havoc_g151-userdebug
-add_lunch_combo havoc_g151-eng
+add_lunch_combo syberia_g151-userdebug

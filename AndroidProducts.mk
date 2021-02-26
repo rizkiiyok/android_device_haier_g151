@@ -14,5 +14,4 @@
 # # limitations under the License.
 #
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/havoc_g151.mk
-
+	$(LOCAL_DIR)/syberia_g151.mk
