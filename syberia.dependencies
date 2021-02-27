@@ -1,14 +1,14 @@
 [
   {
     "remote":  "github",
-    "repository":  "fzkangga/android_kernel_lineage_msm8916",
+    "repository":  "rizkiiyok/android_kernel_haier_msm8909",
     "target_path":  "kernel/linegae/msm8916",
-    "branch":  "lineage-16.0""
+    "branch":  "pie""
   },
   {
     "remote":  "github",
-    "repository":  "fzkangga/proprietary_vendor_haier",
+    "repository":  "rizkiiyok/proprietary_vendor_haier",
     "target_path":  "vendor/haier",
-    "branch":  "pie-ims"
+    "branch":  "pie"
   }
 ]
