@@ -16,12 +16,12 @@
 $(call inherit-product, device/haier/g151/full_g151.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8909
 
-PRODUCT_NAME := syberia_g151
+PRODUCT_NAME := aosp_g151
 BOARD_VENDOR := haier
 PRODUCT_DEVICE := g151
 

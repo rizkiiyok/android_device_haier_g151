@@ -17,6 +17,9 @@
 
 DEVICE_PATH := device/haier/g151
 
+# Disable Gapps
+WITH_GAPPS := false
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8909
 TARGET_BOOTLOADER_BOARD_NAME := MSM8909
